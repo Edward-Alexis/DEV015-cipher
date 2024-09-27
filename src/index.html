@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+      <h1>Cifra Tu mensaje</h1>
+      
+      <div class="form-group">
+        <label class="mensaje">Escribe tu mensaje:</label>
+        <input type="text" id="mensaje">
+      </div>
+      
+      <div class="form-group">
+        <label id="desplazamiento">Elige el desplazamiento:</label>
+        <input type="number" id="offset" min="1" value="1">
+      </div>
+    
+      <button id="cifrarBtn">Cifrar</button>
+      <button id="descifrarBtn">Descifrar</button>
+    
+      <h2>Resultado:</h2>
+      <p id="resultado"></p>
+    <script src="index.js"></script>
+</body>
 </html>
